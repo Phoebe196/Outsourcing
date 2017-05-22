@@ -1,0 +1,367 @@
+html,
+body {
+  background-color: rgb(238, 238, 238);
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+
+/*右边内容栏*/
+
+.right-div {
+  overflow: auto;
+  max-height: 100%;
+  background-color: #fff;
+  margin-left: 260px;
+}
+
+
+/*右边内容栏*/
+
+
+/*进度表*/
+
+.process-finished {
+  background: url(../img/process_circle.png) no-repeat;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+}
+
+.con-process {
+  width: 85%;
+  margin: 0px auto;
+  height: 75px;
+  line-height: 75px;
+  border-bottom: 1px solid #ccc;
+}
+
+.process-li {
+  display: inline-block;
+  line-height: 30px;
+  width: 24%;
+  text-align: center;
+}
+
+.no-finished {
+  background-image: url(../img/process_circle_no.png);
+}
+
+
+/*进度表*/
+
+
+/*公司信息填写*/
+
+.company-infor {
+  height: 400px;
+}
+
+.company {
+  margin: 0px auto;
+  width: 650px;
+  padding-top: 100px;
+}
+
+.star {
+  color: red;
+  padding-right: 2px;
+}
+
+.company .form-control {
+  display: inline-block;
+}
+
+.input-div,
+.button-div {
+  margin: 20px 10px;
+}
+
+.input-div label,
+.button-div label {
+  width: 30%;
+  text-align: right;
+  height: 38px;
+  margin-right: 10px;
+  vertical-align: middle;
+  line-height: 38px;
+}
+
+.input-div input {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  height: 36px;
+  padding-left: 5px;
+  width: 40%;
+}
+
+.hint {
+  color: red;
+  padding-left: 10px;
+}
+
+.button-div .btn {
+  margin-top: 30px;
+  width: 40%;
+}
+
+
+/*公司信息填写*/
+
+
+/*财务信息填写*/
+
+.finance .form-control {
+  display: inline-block;
+}
+
+.finance-infor {
+  display: none;
+  overflow: auto;
+}
+
+.finance {
+  width: 90%;
+  margin: 30px auto 30px auto;
+}
+
+.finance .input-div {
+  width: 49%;
+  margin: 0px 0;
+  display: inline-block;
+}
+
+.finance input {
+  width: 52%;
+}
+
+.finance label {
+  width: 40%;
+}
+
+.finance .btn {
+  display: block;
+  margin: 30px auto 50px auto;
+  width: 30%;
+}
+
+.finance .hint {
+  height: 20px;
+  padding-left: 45%;
+}
+
+
+/*财务信息填写*/
+
+
+/*法人信息填写*/
+
+.represent-infor {
+  display: none;
+}
+
+.represents {
+  width: 85%;
+  margin: 0px auto;
+  padding-bottom: 50px;
+}
+
+.represent {
+  background-color: #EFF6FC;
+  margin-bottom: 20px;
+}
+
+.represent .rep-input:last-child {
+  border-bottom: none;
+}
+
+.represent-num {
+  font-size: 20px;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.rep-head {
+  padding-left: 10px;
+  border-left: 2px solid #4a8ef0;
+}
+
+.rep-head a {
+  cursor: pointer;
+  padding-left: 20px;
+}
+
+.rep-title {
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px 0 0 20px;
+}
+
+.rep-infor {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px 0;
+  border-bottom: 1px dotted #ccc;
+}
+
+.rep-infor:last-child {
+  border-bottom: none;
+}
+
+.rep-infor .input-div {
+  width: 45%;
+  display: inline-block;
+}
+
+.rep-infor .update-file {
+  width: 80%;
+}
+
+.update-file .update-title {
+  width: 20%;
+}
+
+.update-file .file {
+  width: 35%;
+}
+
+.rep-qualification .input-div {
+  display: block;
+}
+
+.rep-infor input {
+  background-color: #fff;
+  width: 60%;
+}
+
+.rep-infor .form-control {
+  width: 60%;
+  display: inline-block;
+}
+
+.rep-infor label {
+  width: 35%;
+}
+
+.rep-infor .input-div {
+  margin: 0px 0px;
+  position: relative;
+}
+
+.rep-input {
+  border-bottom: 1px dotted #ccc;
+  padding-bottom: 10px;
+}
+
+.rep-infor span {
+  position: absolute;
+  bottom: -32px;
+  right: -40px;
+  background-color: #d95350;
+  border: 1px solid #ccc;
+  display: none;
+  border-top: none;
+  color: #fff;
+  padding: 5px;
+  z-index: 99;
+}
+
+.border-top {
+  width: 0;
+  height: 0;
+  border-width: 10px;
+  border-color: transparent transparent #d95350 transparent;
+  border-style: dashed dashed solid dashed;
+  position: absolute;
+  top: -20px;
+  left: 10px;
+}
+
+.rep-infor .file {
+  border: 0px;
+  background-color: #EFF6FC;
+  display: inline-block;
+}
+
+.glyphicon-plus {
+  color: #32cd74;
+  font-weight: bold;
+  font-size: 14px;
+  display: inline-block;
+  position: static;
+  padding: 0px;
+  background-color: transparent;
+  border: none;
+}
+
+.btn-default {
+  margin-left: 194px;
+}
+
+.add {
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+.add a:hover,
+.add a:focus {
+  text-decoration: none;
+}
+
+.add-represent {
+  margin: -90px 0 0px 70px;
+}
+
+.submit {
+  margin: -90px 0 0px 10px;
+}
+
+.rep-infor .files {
+  color: red;
+  background-color: transparent;
+  display: inline-block;
+  position: static;
+  padding: 0px;
+  border: none;
+}
+
+
+/*法人信息填写*/
+
+
+/*提交成功*/
+
+.success {
+  display: none;
+  height: 400px;
+  padding-top: 100px;
+}
+
+.alert {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  height: 200px;
+  line-height: 100px;
+}
+
+.success .glyphicon {
+  font-size: 40px;
+  display: block;
+  text-align: center;
+  padding-top: 50px;
+}
+
+
+/*提交成功*/

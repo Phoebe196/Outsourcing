@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>流程控制_参数输入</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/nav.css">
+  <link rel="stylesheet" href="css/pageF.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- nav -->
+    <div class="nav-box" id="navBox">
+      <div class="logo">
+        XXX后台系统
+      </div>
+      <ul class="nav">
+        <li>
+          <a href="javascript:;">
+            <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+            <span class="nav-name">流程</span>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:;">
+            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            <span class="nav-name">搜索</span>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:;">
+            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span class="nav-name">收藏</span>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:;">
+            <span class="glyphicon glyphicon-download" aria-hidden="true"></span>
+            <span class="nav-name">下载</span>
+          </a>
+        </li>
+        <li class="nav-hidden" id="navHidden">
+          <a href="javascript:;">
+            <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
+            <span class="nav-name">收起</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- nav end-->
+    <div class="right-div" id="rightDiv">
+      <!-- 进度表 -->
+      <div class="process">
+        <ul class="con-process">
+          <li class="process-li">
+            <span class="process-finished">1</span> 公司信息填写
+          </li>
+          <li class="process-li">
+            <span class="process-finished no-finished">2</span> 财务信息填写
+          </li>
+          <li class="process-li">
+            <span class="process-finished no-finished">3</span> 法人信息填写
+          </li>
+          <li class="process-li">
+            <span class="process-finished no-finished">4</span> 完成填写
+          </li>
+        </ul>
+      </div>
+      <!-- 进度表 -->
+      <!-- 公司信息填写 -->
+      <div class="company-infor form">
+        <div class="company">
+          <div class="input-div">
+            <label><i class="star">*</i> 公司全称:</label>
+            <input type="text" name="fullName" placeholder="请填写公司全称" class="form-control">
+            <span class="hint"></span>
+          </div>
+          <div class="input-div">
+            <label><i class="star">*</i> 公司简称:</label>
+            <input type="text" name="abbreName" placeholder="请填写公司简称" class="form-control">
+            <span class="hint"></span>
+          </div>
+          <div class="button-div">
+            <label></label>
+            <input type="submit" value="下一步" class="btn btn-primary" id="nextCompany">
+          </div>
+        </div>
+      </div>
+      <!-- 公司信息填写 -->
+      <!-- 财务信息填写 -->
+      <div class="finance-infor form">
+        <div class="finance">
+          <div class="input-div">
+            <label><i class="star">*</i> 总资产(万元):</label>
+            <input type="text" name="totalAssets" placeholder="请填写数字" class="form-control">
+            <span class="hint"></span>
+          </div>
+          <div class="input-div">
+            <label><i class="star">*</i> 总负债(万元):</label>
+            <input type="text" name="totalLiability" placeholder="请填写数字" class="form-control">
+            <span class="hint"></span>
+          </div>
+          <div class="input-div">
+            <label><i class="star">*</i> 净资产(万元):</label>
+            <input type="text" name="netAssets" placeholder="请填写数字" class="form-control">
+            <span class="hint"></span>
+          </div>
+          <div class="input-div">
+            <label><i class="star">*</i> 总收入(万元):</label>
+            <input type="text" name="totalIncome" placeholder="请填写数字" class="form-control">
+            <span class="hint"></span>
+          </div>
+          <div class="input-div">
+            <label><i class="star">*</i> 管理费(万元):</label>
+            <input type="text" name="managerExpense" placeholder="请填写数字" class="form-control">
+            <span class="hint"></span>
+          </div>
+          <div class="input-div">
+            <label><i class="star">*</i> 业绩报酬(万元):</label>
+            <input type="text" name="performIncome" placeholder="请填写数字" class="form-control">
+            <span class="hint"></span>
+          </div>
+          <div class="input-div">
+            <label><i class="star">*</i> 其他收入(万元):</label>
+            <input type="text" name="otherIncome" placeholder="请填写数字" class="form-control">
+            <span class="hint"></span>
+          </div>
+          <div class="input-div">
+            <label><i class="star">*</i> 职工薪酬(万元):</label>
+            <input type="text" name="salary" placeholder="请填写数字" class="form-control">
+            <span class="hint"></span>
+          </div>
+          <div class="input-div">
+            <label><i class="star">*</i> 外包服务费用支出(万元):</label>
+            <input type="text" name="outsourcing" placeholder="请填写数字" class="form-control">
+            <span class="hint"></span>
+          </div>
+          <div class="input-div">
+            <label><i class="star">*</i> 其他支出(万元):</label>
+            <input type="text" name="otherExpense" placeholder="请填写数字" class="form-control">
+            <span class="hint"></span>
+          </div>
+          <div class="input-div">
+            <label><i class="star">*</i> 营业利润(万元):</label>
+            <input type="text" name="operateProfit" placeholder="请填写数字" class="form-control">
+            <span class="hint"></span>
+          </div>
+          <div class="input-div">
+            <label><i class="star">*</i> 营业收入合计(万元):</label>
+            <input type="text" name="operateIncome" placeholder="请填写数字" class="form-control">
+            <span class="hint"></span>
+          </div>
+          <div class="input-div">
+            <label><i class="star">*</i> 营业支出合计(万元):</label>
+            <input type="text" name="operateExpense" placeholder="请填写数字" class="form-control">
+            <span class="hint"></span>
+          </div>
+          <div class="input-div">
+            <label><i class="star">*</i> 净利润(万元):</label>
+            <input type="text" name="netProfit" placeholder="请填写数字" class="form-control">
+            <span class="hint"></span>
+          </div>
+          <div class="button">
+            <input type="submit" value="下一步" class="btn btn-primary" id="nextFinance" class="form-control">
+          </div>
+        </div>
+      </div>
+      <!-- 财务信息填写 -->
+      <!-- 法人信息填写 -->
+      <div class="represent-infor form">
+        <div class="represents">
+          <div class="represent" id="represent">
+            <div class="rep-head">
+              <h1 class="represent-num"></h1>
+              <a class="delete">删除</a>
+            </div>
+            <div class="rep-input clearfix">
+              <div class="rep-title">
+                基本信息
+              </div>
+              <div class="rep-infor">
+                <div class="input-div form-group">
+                  <label><i class="star">*</i> 姓名:</label>
+                  <input type="text" name="name" placeholder="请输入法人姓名" class="form-control text">
+                  <span class="hint"></span>
+                </div>
+                <div class="input-div">
+                  <label><i class="star">*</i> 身份证号:</label>
+                  <input type="text" name="id" placeholder="请输入法人证件号" class="form-control id-card">
+                  <span class="hint"></span>
+                </div>
+              </div>
+            </div>
+            <div class="rep-input clearfix" id="education">
+              <div class="rep-title">
+                教育经历
+                <p class="add add-edu">
+                  <a href="javascript:void(0)">
+                    <span class="glyphicon glyphicon-plus"></span>
+                  </a>
+                  添加教育经历
+                </p>
+              </div>
+              <div class="rep-infor rep-education" id="repEducation">
+                <div class="input-div">
+                  <label><i class="star">*</i> 起始年月:</label>
+                  <input type="text" name="startEdu" placeholder="请按2000-01-01格式填写" class="date form-control">
+                  <span class="hint"></span>
+                </div>
+                <div class="input-div">
+                  <label><i class="star">*</i> 结束年月:</label>
+                  <input type="text" name="endEdu" placeholder="请按2000-01-01格式填写" class="date form-control">
+                  <span class="hint"></span>
+                </div>
+                <div class="input-div">
+                  <label><i class="star">*</i> 学校名称:</label>
+                  <input type="text" name="schoolName" placeholder="请输入学校名称" class="form-control text">
+                  <span class="hint"></span>
+                </div>
+                <div class="input-div form-group">
+                  <label><i class="star">*</i> 学历:</label>
+                  <select class="form-control">
+                    <option value="middleSchool">初中</option>
+                    <option value="highSchool">高中</option>
+                    <option value="bachelor" selected>本科</option>
+                    <option value="master">硕士</option>
+                    <option value="doctor">博士</option>
+                  </select>
+                  <span class="hint"></span>
+                </div>
+                <div class="input-div">
+                  <label><i class="star">*</i> 专业:</label>
+                  <input type="text" name="major" placeholder="请输入您的专业" class="form-control text">
+                  <span class="hint"></span>
+                </div>
+                <div class="input-div">
+                  <label><i class="star">*</i> 学历/学位编号:</label>
+                  <input type="text" name="degreeNo" placeholder="请输入17位学历/学位编号" class="form-control qualifi-id">
+                  <span class="hint"></span>
+                </div>
+                <div class="input-div form-group update-file">
+                  <label class="update-title"><i class="star">*</i> 学历/学位证明:</label>
+                  <input type="file" class="file" name="degreePic">
+                  <span class="files"></span>
+                </div>
+              </div>
+            </div>
+            <div class="rep-input clearfix" id="working">
+              <div class="rep-title">
+                工作经历
+                <p class="add add-work">
+                  <a href="javascript:void(0)">
+                    <span class="glyphicon glyphicon-plus"></span>
+                  </a>
+                  添加工作经历
+                </p>
+              </div>
+              <div class="rep-infor rep-work" id="repWork">
+                <div class="input-div">
+                  <label><i class="star">*</i> 起始年月:</label>
+                  <input type="text" name="startWork" placeholder="请按2000-01-01格式填写" class="date form-control">
+                  <span class="hint"></span>
+                </div>
+                <div class="input-div">
+                  <label><i class="star">*</i> 结束年月:</label>
+                  <input type="text" name="endWordk" placeholder="请按2000-01-01格式填写" class="date form-control">
+                  <span class="hint"></span>
+                </div>
+                <div class="input-div">
+                  <label><i class="star">*</i> 工作单位:</label>
+                  <input type="text" name="organization" placeholder="请输入单位名称" class="form-control text">
+                  <span class="hint"></span>
+                </div>
+                <div class="input-div">
+                  <label><i class="star">*</i> 工作部门:</label>
+                  <input type="text" name="major" placeholder="请输入所在部门" class="form-control text">
+                  <span class="hint"></span>
+                </div>
+                <div class="input-div">
+                  <label><i class="star">*</i> 职务岗位:</label>
+                  <input type="text" name="job" placeholder="请输入您的职务" class="form-control text">
+                  <span class="hint"></span>
+                </div>
+              </div>
+            </div>
+            <div class="rep-input clearfix">
+              <div class="rep-title">
+                从业资格
+              </div>
+              <div class="rep-infor rep-qualification">
+                <div class="input-div">
+                  <label><i class="star">*</i> 取得方式:</label>
+                  <input type="text" name="method" placeholder="请输入从业资格取得方式" class="form-control text">
+                  <span class="hint"></span>
+                </div>
+                <div class="input-div form-group update-file">
+                  <label class="update-title"><i class="star">*</i> 证明材料:</label>
+                  <input type="file" class="file" name="degreePic">
+                  <span class="files"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-default btn-sm add-represent">
+          <span class="glyphicon glyphicon-plus"></span> 添加法人代表
+        </button>
+        <button type="button" class="btn btn-primary submit" id="submit">
+          完成填写
+        </button>
+      </div>
+      <!-- 法人信息填写 -->
+      <!-- 提交成功提示 -->
+      <div class="success form">
+        <div id="myAlert" class="alert alert-success">
+          <span class="glyphicon glyphicon-ok-sign"></span> 您已成功提交所填写的资料！
+        </div>
+      </div>
+      <!-- 提交成功提示 -->
+    </div>
+  </div>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/pageF.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+/* nav */
+
+.nav-box {
+  position: fixed;
+  left: 0;
+  max-height: none;
+  min-height: 100%;
+  overflow: hidden;
+  width: 260px;
+  background-color: #85c0f8;
+  border-left: 1px solid #ccc;
+}
+
+.logo {
+  width: 85%;
+  height: 75px;
+  text-align: center;
+  margin: 0 auto;
+  border-bottom: 1px solid #fff;
+  font-size: 16px;
+  line-height: 75px;
+  color: #fff;
+}
+
+.nav {
+  width: 80%;
+  margin: 20px auto 0;
+}
+
+.nav li {
+  margin: 5px 0;
+  list-style-type: none;
+  display: block;
+  position: relative;
+}
+
+.nav .glyphicon {
+  margin-right: 10px;
+}
+
+.nav li a{
+  color: #fff;
+  display: block;
+}
+
+.nav li a:hover{
+  background-color: transparent;
+}
+
+.nav-name {
+  font-size: 16px;
+}
+
+.nav .nav-hidden {
+  position: fixed;
+  bottom: 0;
+}
+
+
+/* nav end*/
